@@ -1,0 +1,65 @@
+@import "../../../styles/variables";
+
+.job_card {
+	background: $color_white;
+	border-radius: 0.6rem;
+	display: flex;
+	flex-direction: column;
+	height: 22.8rem;
+	padding: 4.4rem 3.2rem 3.9rem 3.2rem;
+	position: relative;
+	text-decoration: none;
+
+	.logo {
+		align-items: center;
+		border-radius: 1.5rem;
+		display: flex;
+		height: 5rem;
+		justify-content: center;
+		left: 2.5rem;
+		position: absolute;
+		top: -2.5rem;
+		width: 5rem;
+	}
+
+	.info {
+		color: $color_dark_grey;
+		margin-bottom: 0.4rem;
+
+		.dot {
+			background: $color_dark_grey;
+			border-radius: 50%;
+			display: inline-block;
+			height: 0.4rem;
+			margin: 0 0.9rem;
+			width: 0.4rem;
+		}
+	}
+
+	.position {
+		color: $color_dark_blue;
+		font-size: $font_size_h3;
+		font-weight: 700;
+		margin-bottom: 0.7rem;
+	}
+
+	.company {
+		color: $color_dark_grey;
+	}
+
+	.location {
+		color: $color_primary;
+		font-weight: 700;
+		margin-top: auto;
+	}
+}
+
+:global(.dark) {
+	.job_card {
+		background: $color_dark_blue;
+
+		.position {
+			color: $color_white;
+		}
+	}
+}

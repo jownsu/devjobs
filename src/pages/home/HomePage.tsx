@@ -1,5 +1,14 @@
+/* COMPONENTS */
+import JobFilter from "./components/JobFilter";
+import JobGrid from "./components/JobGrid";
+
 const HomePage = () => {
-	return <div>HomePage</div>;
+	return (
+		<>
+			{/* <JobFilter /> */}
+			<JobGrid />
+		</>
+	);
 };
 
 export default HomePage;
