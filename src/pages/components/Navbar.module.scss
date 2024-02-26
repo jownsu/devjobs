@@ -1,0 +1,27 @@
+@import "../../styles/variables";
+
+.nav {
+	background: url("./images/desktop/bg-pattern-header.svg") top / cover no-repeat;
+	border-radius: 0 0 0 10rem;
+	height: 16rem;
+
+	@media only screen and (max-width: $bp_sm) {
+		background-image: url("./images/mobile/bg-pattern-header.svg");
+		border-radius: unset;
+	}
+
+	:global(.container) {
+		display: flex;
+		justify-content: space-between;
+		padding: 4.4rem 0;
+
+		@media only screen and (max-width: $bp_sm) {
+			padding: 3.4rem 0;
+		}
+
+		.logo {
+			background-size: cover;
+			width: 11.5rem;
+		}
+	}
+}

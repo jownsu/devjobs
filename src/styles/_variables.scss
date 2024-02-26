@@ -1,14 +1,14 @@
 /* PRIMARY COLORS */
-$color_primary: #5964E0;
-$color_light_primary: #939BF4;
-$color_dark_blue: #19202D;
+$color_primary: #5964e0;
+$color_light_primary: #939bf4;
+$color_dark_blue: #19202d;
 $color_midnight: #121721;
 
 /* SECONDARY COLORS */
-$color_white: #FFFFFF;
-$color_light_grey: #F4F6F8;
-$color_grey: #9DAEC2;
-$color_dark_grey: #6E8098;
+$color_white: #ffffff;
+$color_light_grey: #f4f6f8;
+$color_grey: #9daec2;
+$color_dark_grey: #6e8098;
 
 /* FONTS */
 $font_primary: "Kumbh Sans", sans-serif;
@@ -18,7 +18,10 @@ $font_size_h3: 2rem;
 $font_size_body: 1.6rem;
 $font_size_h4: 1.4rem;
 
-/* CONTAINERS */
-$container: 1110px;
-$container_md: 689px;
-$container_sm: 327px;
+/* BREAK POINTS */
+$bp_lg: 1110px;
+$bp_md: 900px;
+$bp_sm: 600px;
+
+/* OTHERS */
+$max_width: 1110px;

@@ -1,0 +1,47 @@
+@import "../../styles/variables";
+
+.switch_container {
+	align-items: center;
+	display: flex;
+	gap: 1.6rem;
+
+	> img {
+		&.sun_icon {
+			height: 1.86rem;
+			width: 2rem;
+		}
+
+		&.moon_icon {
+			height: 1.2rem;
+			width: 1.2rem;
+		}
+	}
+
+	.switch {
+		height: 2.4rem;
+		padding: 0;
+		width: 4.8rem;
+
+		:global(.MuiSwitch-thumb) {
+			background-color: $color_primary;
+			height: 1.4rem;
+			opacity: unset;
+			width: 1.4rem;
+		}
+
+		:global(.MuiSwitch-switchBase) {
+			padding: 0.5rem;
+		}
+
+		:global(.MuiSwitch-track) {
+			background-color: $color_white;
+			border-radius: 1.2rem;
+			opacity: unset;
+		}
+
+		:global(.Mui-checked + .MuiSwitch-track) {
+			background: $color_white;
+			opacity: unset;
+		}
+	}
+}
