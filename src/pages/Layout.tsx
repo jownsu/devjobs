@@ -1,4 +1,7 @@
+/* PLUGINS */
 import { Outlet } from "react-router-dom";
+
+/* COMPONENTS */
 import Navbar from "./components/Navbar";
 
 const Layout = () => {
