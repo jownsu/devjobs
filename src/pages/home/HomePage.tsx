@@ -5,7 +5,7 @@ import JobGrid from "./components/JobGrid";
 const HomePage = () => {
 	return (
 		<>
-			{/* <JobFilter /> */}
+			<JobFilter />
 			<JobGrid />
 		</>
 	);

@@ -4,16 +4,18 @@
 	column-gap: 3rem;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	padding: 10rem 0;
+	padding: 6.5rem 0;
 	row-gap: 6.5rem;
 
 	@media only screen and (max-width: $bp_md) {
-		grid-template-columns: repeat(2, 1fr);
 		column-gap: 1.1rem;
+		grid-template-columns: repeat(2, 1fr);
+		padding: 3rem 0;
 	}
 
 	@media only screen and (max-width: $bp_sm) {
 		grid-template-columns: 1fr;
+		padding: 1.7rem 0;
 		row-gap: 5rem;
 	}
 }

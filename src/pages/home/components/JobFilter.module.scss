@@ -1,0 +1,192 @@
+@import "../../../styles/variables";
+
+.job_filter {
+	background: $color_white;
+	border-radius: 0.6rem;
+	display: flex;
+	height: 8rem;
+	transform: translateY(-50%);
+	width: 100%;
+
+	.input_group {
+		border-right: 1px solid #e2e6ea;
+		display: flex;
+		flex: 1;
+		gap: 1.7rem;
+
+		img {
+			align-self: center;
+			height: 2.4rem;
+			width: auto;
+		}
+
+		input {
+			background: none;
+			border: none;
+			caret-color: $color_primary;
+			font-size: 1.6rem;
+			outline: none;
+			padding-right: 1rem;
+			width: 100%;
+		}
+	}
+
+	.search {
+		flex-shrink: 1;
+		flex: 0 1 40%;
+		padding-left: 3.1rem;
+
+		@media only screen and (max-width: $bp_md) {
+			flex: 0 1 31%;
+			padding-left: 2.2rem;
+		}
+
+		@media only screen and (max-width: $bp_sm) {
+			border-right: none;
+			flex: 1 1;
+
+			> img {
+				display: none;
+			}
+		}
+	}
+
+	.location {
+		flex-shrink: 1;
+		flex: 0 1 28%;
+		padding-left: 2.3rem;
+
+		@media only screen and (max-width: $bp_md) {
+			flex: 0 1 30%;
+			padding-left: 2.2rem;
+		}
+	}
+
+	.search_container {
+		align-items: center;
+		display: flex;
+		flex: 1 1;
+		gap: 1rem;
+		justify-content: space-between;
+		padding-left: 3.2rem;
+		padding-right: 1.6rem;
+
+		@media only screen and (max-width: $bp_md) {
+			padding-left: 1.9rem;
+		}
+
+		@media only screen and (max-width: $bp_sm) {
+			flex: 0;
+			padding-left: 1.4rem;
+
+			span {
+				display: none;
+			}
+		}
+
+		.full_time_checkbox {
+			align-items: center;
+			color: $color_dark_blue;
+			display: flex;
+			font-family: inherit;
+			font-weight: 700;
+			gap: 1.7rem;
+
+			@media only screen and (max-width: $bp_sm) {
+				display: none;
+			}
+
+			input[type="checkbox"] {
+				display: none;
+			}
+
+			input[type="checkbox"]:checked + .checkmark {
+				background: $color_primary url("./images/desktop/icon-check.svg") center
+					no-repeat;
+			}
+
+			.checkmark {
+				background: #e8e8ea;
+				border-radius: 0.3rem;
+				display: block;
+				flex-shrink: 0;
+				height: 2.4rem;
+				width: 2.4rem;
+			}
+		}
+
+		img {
+			display: none;
+
+			@media only screen and (max-width: $bp_sm) {
+				display: block;
+			}
+		}
+
+		button {
+			flex: 1;
+			max-width: 12.3rem;
+			padding: 0 1rem;
+
+			@media only screen and (max-width: $bp_sm) {
+				align-items: center;
+				display: flex;
+				height: 4.8rem;
+				justify-content: center;
+				width: 4.8rem;
+			}
+		}
+	}
+
+	.filter_btn {
+		align-self: center;
+		background: none;
+		border: none;
+		height: 3rem;
+		outline: none;
+		width: 3rem;
+
+		.filter_icon {
+			background: url("./images/mobile/icon-filter.svg") center no-repeat;
+			display: block;
+			height: 100%;
+			width: 100%;
+		}
+	}
+}
+
+:global(.dark) {
+	.job_filter {
+		background: $color_dark_blue;
+	}
+
+	.search_container {
+		color: $color_white;
+
+		.full_time_checkbox {
+			color: $color_white;
+
+			.checkmark {
+				background: #2e343f;
+			}
+		}
+	}
+
+	.input_group {
+		border-right-color: rgba($color_dark_grey, 0.2);
+
+		input {
+			color: $color_white;
+
+			&::placeholder {
+				color: #8c8f96;
+			}
+		}
+	}
+
+	.filter_btn {
+		.filter_icon {
+			background-image: url("./images/mobile/icon-filter-white.svg");
+		}
+	}
+}

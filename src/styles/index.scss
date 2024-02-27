@@ -16,6 +16,10 @@ html {
 	font-size: 62.5%;
 }
 
+input {
+	font-family: inherit;
+}
+
 body {
 	background: $color_light_grey;
 	font-family: $font_primary;

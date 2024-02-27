@@ -1,0 +1,48 @@
+@import "../../styles/variables";
+
+.btn {
+	border: none;
+	padding: 1rem 4rem;
+	cursor: pointer;
+	border-radius: 0.5rem;
+	font-weight: 600;
+	font-size: 1.6rem;
+	height: 4.8rem;
+	color: $color_white;
+	transition: all 0.2s;
+	font-family: inherit;
+}
+
+.btn_primary {
+	background: $color_primary;
+
+	&:hover {
+		background: $color_light_primary;
+	}
+}
+
+.btn_secondary {
+	background: #eff0fc;
+
+	&:hover {
+		background: #c5c9f4;
+	}
+}
+
+// :global(.dark) {
+// 	.btn_primary {
+// 		background: #303642;
+
+// 		&:hover {
+// 			background: #696e76;
+// 		}
+// 	}
+
+// 	.btn_secondary {
+// 		background: #eff0fc;
+
+// 		&:hover {
+// 			background: #c5c9f4;
+// 		}
+// 	}
+// }
