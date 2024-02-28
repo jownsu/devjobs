@@ -30,6 +30,10 @@ body {
 	&.dark {
 		background: $color_midnight;
 	}
+
+	main {
+		padding-bottom: 2rem;
+	}
 }
 
 .container {
