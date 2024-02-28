@@ -36,7 +36,7 @@ const ThemeSwitch = () => {
 		<div className={styles.switch_container}>
 			<img
 				className={styles.sun_icon}
-				src="./images/desktop/icon-sun.svg"
+				src="/images/desktop/icon-sun.svg"
 				alt="Logo of the sun"
 			/>
 			<Switch
@@ -46,7 +46,7 @@ const ThemeSwitch = () => {
 			/>
 			<img
 				className={styles.moon_icon}
-				src="./images/desktop/icon-moon.svg"
+				src="/images/desktop/icon-moon.svg"
 				alt="Logo of the sun"
 			/>
 		</div>

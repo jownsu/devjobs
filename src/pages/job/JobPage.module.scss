@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+
+.job_details_page {
+	margin: 0 auto;
+	max-width: 73rem;
+	padding: 0 0.4rem;
+
+	@media only screen and (max-width: $bp_sm) {
+		padding: 0 0.5rem;
+	}
+}

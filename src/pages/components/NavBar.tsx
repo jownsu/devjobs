@@ -10,7 +10,7 @@ const Navbar = () => {
 			<div className="container">
 				<img
 					className={styles.logo}
-					src="./images/desktop/logo.svg"
+					src="/images/desktop/logo.svg"
 					alt="Text logo of devjobs"
 				/>
 				<ThemeSwitch />
