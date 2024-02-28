@@ -3,9 +3,10 @@
 .job_details_page {
 	margin: 0 auto;
 	max-width: 73rem;
-	padding: 0 0.4rem;
+	padding-top: 13.2rem;
+	position: relative;
 
 	@media only screen and (max-width: $bp_sm) {
-		padding: 0 0.5rem;
+		padding-top: 22.1rem;
 	}
 }

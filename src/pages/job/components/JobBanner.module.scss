@@ -7,9 +7,11 @@
 	display: flex;
 	gap: 3.8rem;
 	height: 14rem;
+	left: 0;
 	overflow: hidden;
-	position: relative;
-	transform: translateY(-4rem);
+	position: absolute;
+	top: -4rem;
+	width: 100%;
 
 	@media only screen and (max-width: $bp_sm) {
 		align-items: center;
@@ -20,7 +22,7 @@
 		overflow: initial;
 		padding: 3.9rem 0 3.2rem 0;
 		text-align: center;
-		transform: translateY(-1.5rem);
+		top: -1.5rem;
 	}
 
 	img {

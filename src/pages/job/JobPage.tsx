@@ -9,6 +9,7 @@ import useJobs from "../../hooks/useJobs";
 
 /* COMPONENTS */
 import JobBanner from "./components/JobBanner";
+import JobInformation from "./components/JobInformation";
 
 /* STYLES */
 import styles from "./JobPage.module.scss";
@@ -16,7 +17,6 @@ import styles from "./JobPage.module.scss";
 const JobPage = () => {
 	const { id } = useParams();
 	const getJobDetails = useJobs((state) => state.getJobDetails);
-	const job_details = useJobs((state) => state.job_details);
 
 	useEffect(() => {
 		getJobDetails(parseInt(id!));
@@ -24,7 +24,8 @@ const JobPage = () => {
 
 	return (
 		<div className={styles.job_details_page}>
-			<JobBanner job={job_details} />
+			<JobBanner />
+			<JobInformation />
 		</div>
 	);
 };

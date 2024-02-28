@@ -9,6 +9,7 @@ export interface JobDetails {
 	location: string;
 	website: string;
 	description: string;
+	apply: string;
 	requirements: {
 		content: string;
 		items: string[];
