@@ -41,33 +41,6 @@
 		gap: 2.4rem;
 		padding: 2.4rem;
 
-		.full_time_checkbox {
-			align-items: center;
-			color: $color_dark_blue;
-			display: flex;
-			font-family: inherit;
-			font-weight: 700;
-			gap: 1.7rem;
-
-			input[type="checkbox"] {
-				display: none;
-			}
-
-			input[type="checkbox"]:checked + .checkmark {
-				background: $color_primary url("./images/desktop/icon-check.svg") center
-					no-repeat;
-			}
-
-			.checkmark {
-				background: #e8e8ea;
-				border-radius: 0.3rem;
-				display: block;
-				flex-shrink: 0;
-				height: 2.4rem;
-				width: 2.4rem;
-			}
-		}
-
 		button {
 			flex: 1;
 		}
@@ -80,13 +53,13 @@
 
 		.input_group {
 			border-color: rgba($color_dark_grey, 0.2);
+
+			input {
+				color: $color_white;
+			}
 		}
 
 		.search_container {
-			.full_time_checkbox {
-				color: $color_white;
-			}
-
 			.checkmark {
 				background: #2e343f;
 			}

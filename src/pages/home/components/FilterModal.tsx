@@ -3,6 +3,7 @@ import { Modal } from "@mui/material";
 
 /* COMPONENTS */
 import Button from "../../components/Button";
+import Checkbox from "../../components/Checkbox";
 
 /* STYLES */
 import styles from "./FilterModal.module.scss";
@@ -24,11 +25,7 @@ const FilterModal = ({ open, onClose }: Props) => {
 					<input type="text" placeholder="Filter by location..." />
 				</div>
 				<div className={styles.search_container}>
-					<label htmlFor="full_time_m" className={styles.full_time_checkbox}>
-						<input type="checkbox" id="full_time_m" />
-						<span className={styles.checkmark}></span>
-						Full Time Only
-					</label>
+					<Checkbox>Full Time Only</Checkbox>
 					<Button variant="primary">Search</Button>
 				</div>
 			</div>

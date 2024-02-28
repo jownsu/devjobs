@@ -7,6 +7,7 @@ import { useMediaQuery } from "@mui/material";
 /* COMPONENTS */
 import FilterModal from "./FilterModal";
 import Button from "../../components/Button";
+import Checkbox from "../../components/Checkbox";
 
 /* STYLES */
 import styles from "./JobFilter.module.scss";
@@ -54,11 +55,11 @@ const JobFilter = () => {
 				)}
 
 				<div className={styles.search_container}>
-					<label htmlFor="full_time" className={styles.full_time_checkbox}>
-						<input type="checkbox" id="full_time" />
-						<span className={styles.checkmark}></span>
-						{medium_screen ? "Full Time" : "Full Time Only"}
-					</label>
+					{!small_screen && (
+						<Checkbox>
+							{medium_screen ? "Full Time" : "Full Time Only"}
+						</Checkbox>
+					)}
 					<Button variant="primary">
 						<img
 							src="./images/mobile/icon-search.svg"
