@@ -44,7 +44,9 @@
 	}
 
 	.info {
+		flex-shrink: 1;
 		margin-right: auto;
+		min-width: 0;
 
 		@media only screen and (max-width: $bp_sm) {
 			margin-right: unset;
@@ -58,6 +60,7 @@
 
 		.website {
 			color: $color_dark_grey;
+			word-wrap: break-word;
 		}
 	}
 
@@ -68,9 +71,10 @@
 		color: $color_primary;
 		display: flex;
 		font-weight: 700;
-		height: 4.8rem;
 		margin-right: 4rem;
 		padding: 0 2rem;
+		padding: 1rem 2rem;
+		text-align: center;
 		text-decoration: none;
 		transition: all 0.2s;
 

@@ -19,11 +19,14 @@ interface JobStore {
 	job_details: JobDetails;
 	filterJobs: (filter: JobFilterType) => void;
 	getJobDetails: (job_id: number) => void;
+	loadMore: () => void;
+	is_show_load_more: boolean;
 }
 
 const useJobs = create<JobStore>((set) => ({
 	jobs: jobs_data,
 	job_details: {} as JobDetails,
+	is_show_load_more: true,
 	filterJobs: (filter) => {
 		set(() => {
 			return {
@@ -34,6 +37,11 @@ const useJobs = create<JobStore>((set) => ({
 						) &&
 						(!filter.is_fulltime || job.contract === "Full Time") &&
 						job.location.toLowerCase().includes(filter.location.toLowerCase())
+				),
+				is_show_load_more: !(
+					filter.generic ||
+					filter.location ||
+					filter.is_fulltime
 				)
 			};
 		});
@@ -41,7 +49,12 @@ const useJobs = create<JobStore>((set) => ({
 	getJobDetails: (job_id) =>
 		set(() => ({
 			job_details: jobs_data.find((job) => job.id === job_id)
-		}))
+		})),
+	loadMore: () => {
+		set((state) => ({
+			jobs: [...state.jobs, ...jobs_data]
+		}));
+	}
 }));
 
 export default useJobs;

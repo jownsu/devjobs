@@ -12,8 +12,8 @@ const JobGrid = () => {
 
 	return (
 		<div className={styles.jobs_container}>
-			{jobs.map((job) => (
-				<JobCard key={job.id} job={job} />
+			{jobs.map((job, key) => (
+				<JobCard key={key} job={job} />
 			))}
 		</div>
 	);
