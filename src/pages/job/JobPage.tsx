@@ -10,6 +10,7 @@ import useJobs from "../../hooks/useJobs";
 /* COMPONENTS */
 import JobBanner from "./components/JobBanner";
 import JobInformation from "./components/JobInformation";
+import Footer from "./components/Footer";
 
 /* STYLES */
 import styles from "./JobPage.module.scss";
@@ -23,10 +24,15 @@ const JobPage = () => {
 	}, []);
 
 	return (
-		<div className={styles.job_details_page}>
-			<JobBanner />
-			<JobInformation />
-		</div>
+		<>
+			<main className="container">
+				<div className={styles.job_details_page}>
+					<JobBanner />
+					<JobInformation />
+				</div>
+			</main>
+			<Footer />
+		</>
 	);
 };
 
