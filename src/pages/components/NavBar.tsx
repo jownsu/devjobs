@@ -1,9 +1,11 @@
 /* COMPONENTS */
 import ThemeSwitch from "./ThemeSwitch";
 
+/* PLUGINS */
+import { Link } from "react-router-dom";
+
 /* STYLES */
 import styles from "./Navbar.module.scss";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
 	return (

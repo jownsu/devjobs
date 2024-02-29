@@ -2,7 +2,7 @@
 import { Outlet } from "react-router-dom";
 
 /* COMPONENTS */
-import Navbar from "./components/Navbar";
+import Navbar from "./components/NavBar";
 
 const Layout = () => {
 	return (
