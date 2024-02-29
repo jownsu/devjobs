@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
--   Live Site URL: [Devjobs](https://devjobs-kls0wvidi-jownsu.vercel.app/)
+-   Live Site URL: [Devjobs](https://devjobs-pi.vercel.app/)
 
 ### Built with
 
