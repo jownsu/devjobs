@@ -36,7 +36,7 @@ const JobFilter = () => {
 			<form className={styles.job_filter} onSubmit={onSubmit}>
 				<div className={`${styles.input_group} ${styles.search}`}>
 					<img
-						src="./images/desktop/icon-search.svg"
+						src="/images/desktop/icon-search.svg"
 						alt="Magnifying glass icon"
 					/>
 					<input
@@ -64,7 +64,7 @@ const JobFilter = () => {
 				) : (
 					<div className={`${styles.input_group} ${styles.location}`}>
 						<img
-							src="./images/desktop/icon-location.svg"
+							src="/images/desktop/icon-location.svg"
 							alt="Pin location icon"
 						/>
 						<input
@@ -91,7 +91,7 @@ const JobFilter = () => {
 					)}
 					<Button variant="primary" type="submit">
 						<img
-							src="./images/mobile/icon-search.svg"
+							src="/images/mobile/icon-search.svg"
 							alt="Magniyfying icon"
 						/>{" "}
 						<span>Search</span>

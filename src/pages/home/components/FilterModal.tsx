@@ -36,7 +36,7 @@ const FilterModal = ({ open, onClose }: Props) => {
 			<form className={styles.filter_modal} onSubmit={handleSubmit}>
 				<div className={styles.input_group}>
 					<img
-						src="./images/desktop/icon-location.svg"
+						src="/images/desktop/icon-location.svg"
 						alt="Pin location icon"
 					/>
 					<input

@@ -10,6 +10,10 @@
 		border-radius: unset;
 	}
 
+	a {
+		line-height: 0;
+	}
+
 	:global(.container) {
 		display: flex;
 		justify-content: space-between;

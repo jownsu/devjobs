@@ -13,7 +13,7 @@
 	}
 
 	input[type="checkbox"]:checked + .checkmark {
-		background: $color_primary url("./images/desktop/icon-check.svg") center no-repeat;
+		background: $color_primary url("/images/desktop/icon-check.svg") center no-repeat;
 	}
 
 	.checkmark {
